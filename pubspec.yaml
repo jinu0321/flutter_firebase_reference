@@ -12,17 +12,27 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
+
   firebase_core:
   firebase_auth:
   cloud_firestore:
   firebase_storage:
   firebase_remote_config:
+
+  get:
   url_launcher:
+  fluttertoast:
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^1.0.0
+  # flutter_launcher_icons terminal: flutter pub run flutter_launcher_icons:main
+  flutter_launcher_icons:
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/icon.png"
 
 flutter:
   uses-material-design: true
