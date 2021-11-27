@@ -1,4 +1,5 @@
 import 'package:firebase_reference/common_value.dart';
+import 'package:firebase_reference/firebase_auth/current_auth_widget.dart';
 import 'package:firebase_reference/firebase_auth/email_auth_page.dart';
 import 'package:firebase_reference/widget/fr_app_bar.dart';
 import 'package:firebase_reference/widget/fr_button.dart';
@@ -23,6 +24,7 @@ class _AuthPageState extends State<AuthPage> {
             padding: commonPadding,
             child: Column(
               children: [
+                CurrentAuthWidget(),
                 FrButton(
                     name: 'email/password',
                     callBack: () => Get.to(() => EmailAuthPage()))
@@ -30,9 +32,5 @@ class _AuthPageState extends State<AuthPage> {
             ),
           )),
         ));
-  }
-
-  Widget currentAuthStatue() {
-    return 
   }
 }
